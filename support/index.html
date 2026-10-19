@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ToneRecipe 使用帮助、购买恢复和联系支持。">
-  <title>ToneRecipe 帮助与支持</title>
+  <meta name="description" content="ToneRecipe 中英文使用帮助、语言设置、购买恢复和联系支持。 Help for language settings, editing, exports, and restoring purchases.">
+  <title>ToneRecipe 帮助与支持 · Help &amp; Support</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -17,7 +17,13 @@
     <ul class="nav">
       <li><a href="../">返回首页</a></li>
       <li><a href="../privacy/">隐私政策</a></li>
+      <li><a href="#english" lang="en">English help</a></li>
     </ul>
+
+    <section id="languages">
+      <h2>界面语言</h2>
+      <p>ToneRecipe 支持简体中文和英文，界面跟随 iOS 中的 App 语言设置。文字参数和截图识别均支持中英文参数名称。App 语言与购买所用的 App Store 地区是独立设置。</p>
+    </section>
 
     <section>
       <h2>无法选择照片或截图</h2>
@@ -68,9 +74,33 @@
       <p>请注明 ToneRecipe 版本和 Build、iPhone 型号、iOS 版本、失败步骤与页面错误。不要发送私人照片、Apple 账户密码、银行卡信息、签名文件或 API Key。</p>
     </section>
 
-    <section lang="en">
-      <h2>English support</h2>
-      <p>For help with photo import, OCR recognition, Live Photo playback/export, the monthly free-export allowance, or restoring the one-time Pro purchase, email 13413629496@163.com. Include the app version/build, iPhone model, iOS version, and steps to reproduce. Do not attach private photos, passwords, payment information, signing files, or API keys.</p>
+    <section id="english" lang="en">
+      <h2>Help &amp; Support</h2>
+      <p>ToneRecipe supports English and Simplified Chinese. The interface follows your iOS app language setting. Text recipes and screenshot recognition support parameter names in both languages. Your App Store purchase region does not determine the interface language.</p>
+      <p><a href="#languages">简体中文帮助</a> · <a href="../privacy/#face-data-en">Privacy and photos containing faces</a></p>
+
+      <h3>Importing a photo or screenshot</h3>
+      <p>Choose the image again in the system photo picker. If Live Photo resources cannot be read, open Profile → Photo access and allow access to that photo in Settings, then import it again. ToneRecipe processes content you choose; it does not upload your library. Downloading an original from iCloud Photos may require a connection.</p>
+
+      <h3>Incomplete recognition</h3>
+      <p>Use a clear, high-contrast screenshot cropped to the settings, ideally with one parameter per line. English and Chinese parameter names are supported. Use integer slider values, such as Exposure +10 and Contrast -15. Decimal, EV, Kelvin, fractional and scientific notation are not automatically converted. Global Hue is not Tint; channel-specific HSL Hue must identify a color channel. Review unsupported lines, low-confidence values and range limits before applying.</p>
+      <p>Reference-photo analysis estimates a starting recipe; it does not recover the original editing settings or guarantee an identical result. ToneRecipe uses its own rendering scale, so identical numbers need not match Apple Photos or another editor.</p>
+
+      <h3>Live Photo playback or export</h3>
+      <p>Import the original Live Photo. Tap LIVE in the editor to play one cycle. Keep the app in the foreground until export finishes. Camera microphone access is used only to preserve sound in captured Live Photos; without it you can take still photos. HDR preservation is not currently supported.</p>
+
+      <h3>Preview or export failures</h3>
+      <p>Check available storage and permission to add photos, wait for the preview, then retry. Canceled and failed exports do not use your free allowance. Deleting a recent project in ToneRecipe does not delete exported copies in Photos.</p>
+
+      <h3>Free exports and Pro Lifetime</h3>
+      <p>The free version includes five successful image exports per calendar month. Recognition, Photo Match, editing, presets, and recent projects remain available without usage limits. Pro Lifetime removes the export limit through a one-time purchase with no automatic renewal.</p>
+      <p>To restore, open ToneRecipe Pro → Restore Purchases while online using the Apple Account that made the purchase. This explicitly synchronizes with Apple and may request account verification. Apple determines the displayed purchase currency and final price.</p>
+
+      <h3>Deleting local content</h3>
+      <p>Delete projects in Recents, custom presets in Preset Details, and exported images separately in Photos. Uninstalling removes the app container, but iOS may retain the Keychain free-export counter. iCloud Photos and device backups follow your Apple settings.</p>
+
+      <h3>Contact</h3>
+      <p>Email developer Zheng Haitian at <a class="contact" href="mailto:13413629496@163.com">13413629496@163.com</a>. Include the ToneRecipe version/build, iPhone model, iOS version, steps to reproduce, and error message. Do not send private photos, passwords, payment information, signing files, or API keys.</p>
     </section>
   </main>
   <footer>© 2026 郑海天 · ToneRecipe</footer>
