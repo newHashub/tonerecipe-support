@@ -22,3 +22,12 @@ Recognition and editing run on device. Reference-photo matching estimates a star
 - [Privacy](https://newhashub.github.io/tonerecipe-support/privacy/)
 
 This public repository hosts ToneRecipe’s static website, not the iOS application source. The pages use no JavaScript, cookies, analytics, remote fonts, or third-party assets.
+
+
+## Search-engine maintenance
+
+The homepage retains Google and Bing site-verification tags. The public hexadecimal `.txt` file proves ownership of this website path for IndexNow; it is not an account credential.
+
+After publishing a changed page, run `python3 tools/notify-indexnow.py <canonical-url>` to inspect the notification, then add `--submit` to send it. Omit URLs only for the initial submission of all sitemap pages. The helper checks the deployed ownership file and pages before sending. It uses Python's standard library and adds no dependencies. Do not repeatedly submit unchanged pages.
+
+The default endpoint shares notifications with participating IndexNow search engines. HTTP 200 means received; HTTP 202 means ownership validation is pending. Neither response confirms indexing. Google Search Console requests and actual index inspection are separate.
