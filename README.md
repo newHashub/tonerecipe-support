@@ -4,12 +4,14 @@ ToneRecipe 可以把博主分享的调色文字或参数截图，变成能检查
 
 - [中文产品介绍与操作教程](https://newhashub.github.io/tonerecipe-support/zh-cn/apps/tonerecipe/)
 - [复制文字参数，不用逐个调整滑杆](https://newhashub.github.io/tonerecipe-support/zh-cn/apps/tonerecipe/#text-recipe)
+- [真实照片完整示例：原图、七项参数和应用结果](https://newhashub.github.io/tonerecipe-support/zh-cn/apps/tonerecipe/#worked-example)
 - [中国大陆 App Store](https://apps.apple.com/cn/app/tonerecipe/id6799357040)
 
 ToneRecipe reads photo editing settings from text or a screenshot. Review the recognized values, apply them to your photo, fine-tune the result, and save a reusable preset.
 
 - [English product guide](https://newhashub.github.io/tonerecipe-support/en/apps/tonerecipe/)
 - [Paste a creator’s settings without adjusting every slider](https://newhashub.github.io/tonerecipe-support/en/apps/tonerecipe/#text-recipe)
+- [Worked example: original photo, seven settings, and result](https://newhashub.github.io/tonerecipe-support/en/apps/tonerecipe/#worked-example)
 - [U.S. App Store](https://apps.apple.com/us/app/tonerecipe/id6799357040)
 
 Requires iOS 17 or later; supports English and Simplified Chinese. Available in China mainland, the United States, the United Kingdom, Canada, Australia, New Zealand, and Singapore. [All download regions](https://newhashub.github.io/tonerecipe-support/#download).

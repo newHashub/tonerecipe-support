@@ -22,6 +22,7 @@
       <p class="eyebrow">ToneRecipe for iPhone</p>
       <h1>Apply photo editing settings from a screenshot</h1>
       <p class="lead">ToneRecipe reads slider values such as exposure, highlights, and contrast from a tutorial screenshot or a text recipe. Review the values, apply them to your photo, and save the adjusted recipe as a preset.</p>
+      <p><a href="#worked-example">See a complete example: the original photo, seven settings, and the result</a></p>
       <a class="button" href="https://apps.apple.com/us/app/tonerecipe/id6799357040">U.S. App Store</a>
       <a class="button" href="https://apps.apple.com/cn/app/tonerecipe/id6799357040">China mainland App Store</a>
       <p class="muted">Requires iOS 17 or later. Supports English and Simplified Chinese. Available on the App Store in China mainland, the United States, the United Kingdom, Canada, Australia, New Zealand, and Singapore. Your Apple Account country or region determines your storefront. <a href="../../../#download">Choose your App Store region</a>.</p>
@@ -58,6 +59,36 @@
       <pre><code>Exposure +5
 Contrast -8
 Highlights -20</code></pre>
+    </section>
+
+    <section id="worked-example" aria-labelledby="worked-example-title">
+      <h2 id="worked-example-title">Worked example: apply a recipe to an overcast architecture photo</h2>
+      <p>These images show the same developer-provided photo before and after applying the example recipe in ToneRecipe 1.0.3. Copy the settings or download the original photo to try them, then compare how they work on your own photos.</p>
+      <div class="case-gallery">
+        <figure>
+          <a href="../../../assets/examples/gray-sky-original.jpg"><img src="../../../assets/examples/gray-sky-original.jpg" width="3024" height="4032" loading="lazy" alt="Before editing: an architecture photo with a gray sky and dark foreground"></a>
+          <figcaption>Original · <a href="../../../assets/examples/gray-sky-original.jpg" download>Download the example photo</a></figcaption>
+        </figure>
+        <figure>
+          <a href="../../../assets/examples/gray-sky-result.jpg"><img src="../../../assets/examples/gray-sky-result.jpg" width="1080" height="1440" loading="lazy" alt="After applying the seven example settings: brighter sky and building with stronger greens"></a>
+          <figcaption>After applying the recipe below</figcaption>
+        </figure>
+      </div>
+      <h3>Copy the example settings</h3>
+      <pre><code>Filter Dramatic Cool 50
+Warmth -14
+Tint +29
+Saturation +32
+Vibrance +41
+Contrast +19
+Brightness +100</code></pre>
+      <p><a href="../../../assets/examples/gray-sky-recipe-en.txt" download>Download the settings as text</a></p>
+      <ol>
+        <li>Copy all seven lines, paste them into the <strong>Recognize</strong> screen, and tap <strong>Recognize</strong>.</li>
+        <li>Check the six adjustment values and the <strong>Dramatic Cool</strong> filter at intensity 50, then tap <strong>Apply</strong> and choose a photo.</li>
+        <li>Compare the original and result, fine-tune the light and color, then open <strong>Export</strong> and select <strong>Save Preset</strong> to reuse the recipe.</li>
+      </ol>
+      <p class="muted">These are integer slider values; Warmth -14 is not a Kelvin temperature. Brightness +100 is the example value for this photo. On another photo, check that the sky and other light areas are not too bright. Results can vary by photo, app version, and editor.</p>
     </section>
 
     <section>
