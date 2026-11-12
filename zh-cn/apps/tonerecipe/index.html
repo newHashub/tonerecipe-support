@@ -22,6 +22,7 @@
       <p class="eyebrow">ToneRecipe · iPhone 调色配方</p>
       <h1>把截图里的调色参数用到自己的照片</h1>
       <p class="lead">ToneRecipe 是一款 iPhone 照片调色 App。它可以识别教程截图里的曝光、高光、对比度等数值，也可以读取粘贴的文字配方。核对后应用到自己的照片，微调并存为下次能直接用的预设。</p>
+      <p><a href="#worked-example">看一个完整示例：原图、七项参数和应用结果</a></p>
       <a class="button" href="https://apps.apple.com/cn/app/tonerecipe/id6799357040">中国大陆 App Store</a>
       <a class="button" href="https://apps.apple.com/us/app/tonerecipe/id6799357040">美国 App Store</a>
       <p class="muted">需要 iOS 17 或更新版本，支持简体中文和英文。ToneRecipe 目前在中国大陆、美国、英国、加拿大、澳大利亚、新西兰和新加坡上架，商店地区由 Apple 账户设置决定。<a href="../../../#download">查看各地区下载入口</a>。</p>
@@ -58,6 +59,36 @@
       <pre><code>曝光 +5
 对比度 -8
 高光 -20</code></pre>
+    </section>
+
+    <section id="worked-example" aria-labelledby="worked-example-title">
+      <h2 id="worked-example-title">完整示例：把一组参数应用到灰天建筑照片</h2>
+      <p>下面是开发者提供的同一张照片，以及 ToneRecipe 1.0.3 应用示例配方后的结果。可以复制完整参数，也可以下载原图尝试，再与自己的照片比较。</p>
+      <div class="case-gallery">
+        <figure>
+          <a href="../../../assets/examples/gray-sky-original.jpg"><img src="../../../assets/examples/gray-sky-original.jpg" width="3024" height="4032" loading="lazy" alt="调色前：阴天拍摄的建筑，天空灰暗、前景较暗"></a>
+          <figcaption>原图 · <a href="../../../assets/examples/gray-sky-original.jpg" download>下载示例照片</a></figcaption>
+        </figure>
+        <figure>
+          <a href="../../../assets/examples/gray-sky-result.jpg"><img src="../../../assets/examples/gray-sky-result.jpg" width="1080" height="1440" loading="lazy" alt="应用七项示例参数后：天空和建筑更明亮，树木色彩更鲜明"></a>
+          <figcaption>应用下方配方后的结果</figcaption>
+        </figure>
+      </div>
+      <h3>复制这组示例参数</h3>
+      <pre><code>滤镜 反差冷色 50
+色温 -14
+色调 +29
+饱和度 +32
+自然饱和度 +41
+对比度 +19
+亮度 +100</code></pre>
+      <p><a href="../../../assets/examples/gray-sky-recipe-zh.txt" download>下载中文参数文字</a></p>
+      <ol>
+        <li>复制上面七行，在「识别参数」页粘贴并点「识别参数」。</li>
+        <li>核对六项调整值，以及「反差冷色」滤镜和强度 50，再点「应用」选择照片。</li>
+        <li>对比原图与结果，按照片亮度和颜色微调；满意后从「导出」进入「存为预设」。</li>
+      </ol>
+      <p class="muted">这里使用整数滑杆值，色温 -14 不是开尔文温度。这组参数中的亮度 +100 是这张照片的示例值；换一张照片时，请检查天空和浅色区域是否过亮。相同参数在不同照片、App 版本和编辑器中可能产生不同效果。</p>
     </section>
 
     <section>

@@ -1,0 +1,7 @@
+Filter Dramatic Cool 50
+Warmth -14
+Tint +29
+Saturation +32
+Vibrance +41
+Contrast +19
+Brightness +100
