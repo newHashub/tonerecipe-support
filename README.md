@@ -28,6 +28,8 @@ This public repository hosts ToneRecipe’s static website, not the iOS applicat
 
 ## Search-engine maintenance
 
+`sitemap.xml` remains the primary sitemap, including for Bing. `sitemap-tonerecipe.xml` is a byte-identical copy at a stable alternative path for a Google Search Console filename workaround experiment. Changing the path is not proof of the underlying cause or successful indexing. Keep both XML files synchronized after an actual URL or modification-date change (`cp sitemap.xml sitemap-tonerecipe.xml`), and verify with `cmp sitemap.xml sitemap-tonerecipe.xml` before deployment. Do not create additional dated sitemap files or repeatedly submit unchanged maps.
+
 The homepage retains Google and Bing site-verification tags. The public hexadecimal `.txt` file proves ownership of this website path for IndexNow; it is not an account credential.
 
 After publishing a changed page, run `python3 tools/notify-indexnow.py <canonical-url>` to inspect the notification, then add `--submit` to send it. Omit URLs only for the initial submission of all sitemap pages. The helper checks the deployed ownership file and pages before sending. It uses Python's standard library and adds no dependencies. Do not repeatedly submit unchanged pages.
