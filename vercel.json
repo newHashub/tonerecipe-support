@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "functions": {
+    "api/sitemap.js": {
+      "includeFiles": "sitemap.xml",
+      "maxDuration": 5
+    }
+  },
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/api/sitemap" },
+    { "src": "/robots.txt", "dest": "/sitemap-host/robots.txt" },
+    { "src": "/", "dest": "/sitemap-host/index.html" },
+    { "src": "/.*", "status": 404 }
+  ]
+}
