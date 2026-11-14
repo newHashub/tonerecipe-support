@@ -28,6 +28,16 @@ This public repository hosts ToneRecipe’s static website, not the iOS applicat
 
 ## Search-engine maintenance
 
+### Independent sitemap transport
+
+The Vercel project `tonerecipe-sitemap` serves the existing `sitemap.xml` through `api/sitemap.js`, with a small ownership-verification homepage and robots file. Only these three routes are exposed on that host; the product pages and their canonical URLs remain on GitHub Pages. GitHub Pages ignores `vercel.json` and continues serving the original static website.
+
+The function bundles the root XML directly, so updating it requires no second URL inventory or runtime upstream fetch. Each GET/HEAD records the response status, byte count, checksum, method and claimed user agent in Vercel runtime logs. It does not log IPs, cookies or query strings, and a user agent does not establish crawler identity. Responses use `no-store` so requests reach the function and can be observed. Log availability and retention depend on the Vercel plan; there is no background polling or paid log drain.
+
+Use the existing site's root robots declaration for [cross-site sitemap discovery](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#sitemap-cross-submission). A successful deployment or live fetch is not proof of Google sitemap processing or page indexing. Verify the new host anonymously, the byte-for-byte XML response, runtime logs, and the Search Console discovered-page count separately.
+
+### Existing sitemap paths
+
 `sitemap.xml` remains the primary sitemap, including for Bing. `sitemap-tonerecipe.xml` is a byte-identical copy at a stable alternative path for a Google Search Console filename workaround experiment. Changing the path is not proof of the underlying cause or successful indexing. Keep both XML files synchronized after an actual URL or modification-date change (`cp sitemap.xml sitemap-tonerecipe.xml`), and verify with `cmp sitemap.xml sitemap-tonerecipe.xml` before deployment. Do not create additional dated sitemap files or repeatedly submit unchanged maps.
 
 The homepage retains Google and Bing site-verification tags. The public hexadecimal `.txt` file proves ownership of this website path for IndexNow; it is not an account credential.
